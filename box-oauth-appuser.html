@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app="boxapp">
+	<head>
+		<title>Box OAuth in Angular</title>
+	</head>
+	<body>
+		<div id="oauth-appuser" ng-controller="boxCtrl">
+			<button ng-click="boxLogin()">Login</button>
+			<h3><span>{{response}}</span></h3>
+			<h3><span>{{cal}}</span></h3>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script src="js/box-app.js"></script>
+	</body>
+</html>

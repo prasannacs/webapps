@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="app3">
+	<head>
+		<title>AngularJS Tutorial</title>
+	</head>
+	<body>
+		<div id="groceryList" ng-controller="gListCtrl">
+			<h3>Grocery Items {{groceries.length}}</h3>
+			<ol>
+				<li ng-repeat="groc in groceries">{{groc.item}}</li>
+			</ol>	
+
+			<table>
+				<tr ng-repeat="grocery in groceries">
+					<td>{{grocery.item}}</td>
+					<td>|</td>
+					<td>{{grocery.purchased}}</td>
+				</tr>
+			</table>
+
+			<label>Change item Purchase</label>
+			<input ng-model="groceries[0].purchased">
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script src="js/exam3.js"></script>
+	</body>
+</html>
